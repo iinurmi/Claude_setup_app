@@ -43,3 +43,4 @@ Create the `issues/` directory if it doesn't exist. Do not open or explain the f
 - Default priority: normal, effort: medium (ask only if unclear)
 - Max 3 files in context - most relevant only
 - Bullet points over paragraphs
+
