@@ -14,7 +14,7 @@ migration later and to stay compatible with the latest `@supabase/ssr` client.
 - Env var `NEXT_PUBLIC_SUPABASE_ANON_KEY` → `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`
 - Env var `SUPABASE_SERVICE_ROLE_KEY` → `SUPABASE_SECRET_KEY`
 - Both `lib/supabase/client.ts` and `lib/supabase/server.ts` updated
-- Old `.env.example` deleted; new one should use the updated names
+- Old `.env.example` deleted; env var names now documented in `ONBOARDING.md`
 
 ---
 

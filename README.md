@@ -27,10 +27,8 @@ A full-stack web application built with Next.js, TypeScript, Supabase, and Tailw
 
 3. Set up environment variables:
 
-   ```bash
-   cp .env.example .env.local
-   # Open .env.local and fill in your Supabase credentials
-   ```
+   Create `.env.local` in the project root with your Supabase credentials.
+   See [ONBOARDING.md](./ONBOARDING.md) for the exact variables and where to find them.
 
 4. Start the development server:
 
@@ -58,6 +56,8 @@ A full-stack web application built with Next.js, TypeScript, Supabase, and Tailw
 - **Styling**: [Tailwind CSS](https://tailwindcss.com)
 
 ## Project Conventions
+
+See [ONBOARDING.md](./ONBOARDING.md) for full setup instructions including Claude Code configuration and Windows-specific steps.
 
 See [CLAUDE.md](./CLAUDE.md) for coding conventions, architecture decisions, and Claude Code instructions.
 
