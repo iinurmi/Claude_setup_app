@@ -16,7 +16,8 @@
       "Bash(git branch*)",
       "Bash(git init)",
       "Bash(git remote*)",
-      "Bash(export PATH=\"/c/Program Files/nodejs:$PATH\")"
+      "Bash(export PATH=\"/c/Program Files/nodejs:$PATH\")",
+      "Bash(git commit:*)"
     ],
     "deny": [
       "Bash(rm -rf *)",
