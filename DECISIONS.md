@@ -32,6 +32,14 @@ migration later and to stay compatible with the latest `@supabase/ssr` client.
 
 ---
 
+## 2026-03-01 — GitHub remote uses HTTPS, not SSH
+
+**Why:** SSH host key for `github.com` was not present in `~/.ssh/known_hosts` on the dev machine, causing `git push` to fail with "Host key verification failed". HTTPS requires no key setup and works immediately with GitHub credential manager.
+
+**Rule:** Keep `origin` as HTTPS (`https://github.com/iinurmi/Claude_setup_app.git`). To switch to SSH later: add GitHub's public key via `ssh-keyscan github.com >> ~/.ssh/known_hosts`, add your SSH key to GitHub, then `git remote set-url origin git@github.com:iinurmi/Claude_setup_app.git`.
+
+---
+
 ## 2026-03-01 — Named exports for all React components
 
 **Why:** Consistent with TypeScript best practices and easier to tree-shake. Default exports make
