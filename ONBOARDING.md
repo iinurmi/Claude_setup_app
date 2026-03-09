@@ -28,8 +28,8 @@ git --version
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/iinurmi/Claude_setup_app.git
-cd Claude_setup_app
+git clone <your-github-repo-url>
+cd <your-repo-name>
 ```
 
 ### 2. Install dependencies

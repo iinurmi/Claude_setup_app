@@ -35,16 +35,7 @@ git status --short
 
 ---
 
-## Step 3 — Check CHANGELOG
-
-Read `CHANGELOG.md`. Look for content under `## [Unreleased]`.
-
-- If the section is **empty or missing**: warn "⚠️ CHANGELOG [Unreleased] is empty — run `/document` first. Proceed anyway? (yes/no)" and wait.
-- If content exists: extract the bullet points — you will use them for the commit message in Step 5.
-
----
-
-## Step 4 — Stage Files
+## Step 3 — Stage Files
 
 Stage all tracked modifications and untracked files **except**:
 - `.claude/settings.local.json` — machine-local, never commit
@@ -66,16 +57,16 @@ Confirm with user: "Stage looks correct? (yes/no)"
 
 ---
 
-## Step 5 — Propose Commit Message
+## Step 4 — Propose Commit Message
 
-Using the CHANGELOG [Unreleased] content from Step 3, draft a **Conventional Commit** message:
+Using the staged diff from Step 3, draft a **Conventional Commit** message:
 
 Format:
 ```
 <type>: <short imperative summary>
 
-- bullet from changelog
-- bullet from changelog
+- bullet summarizing a change
+- bullet summarizing a change
 ```
 
 Choose `type` from: `feat` `fix` `refactor` `chore` `docs` `style`
@@ -88,7 +79,7 @@ If user says edit, ask them to provide the message or adjustments.
 
 ---
 
-## Step 6 — Commit
+## Step 5 — Commit
 
 Run with the approved message:
 ```bash
@@ -102,7 +93,7 @@ Confirm: "✅ Committed. SHA: [short hash]"
 
 ---
 
-## Step 7 — Push (Optional)
+## Step 6 — Push (Optional)
 
 Ask: "Push to remote now? (yes/no)"
 
